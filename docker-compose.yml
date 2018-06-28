@@ -1,0 +1,13 @@
+version: "3"
+services:
+  react:
+    environment:
+      - PORT=3333
+      - HOST=0.0.0.0
+    build:
+      context: .
+      dockerfile: ./react-app/dockerfile_react
+    volumes:
+      - ./react-app/app:/react-app/app
+    ports:
+      - "3333:3333"
