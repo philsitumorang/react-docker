@@ -1,0 +1,6 @@
+FROM node:10.5.0
+
+RUN mkdir /react-app
+RUN mkdir /react-app/app
+WORKDIR /react-app/app
+CMD npm install && npm start
